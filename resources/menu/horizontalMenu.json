@@ -1,0 +1,33 @@
+{
+  "menu": [
+    {
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "dashboard"
+    },
+    {
+      "menuHeader": "CRM"
+    },
+    {
+      "menuHeader": "Settings"
+    },
+    {
+      "url": "app/kanban",
+      "name": "Kanban",
+      "icon": "menu-icon tf-icons ti ti-layout-kanban",
+      "slug": "app-kanban"
+    },
+    {
+      "name": "eCommerce",
+      "icon": "menu-icon tf-icons ti ti-building-factory-2",
+      "slug": "app-ecommerce",
+      "submenu": [
+        {
+          "url": "app/ecommerce/dashboard",
+          "name": "Dashboard",
+          "slug": "app-ecommerce-dashboard"
+        }
+      ]
+    }
+  ]
+}

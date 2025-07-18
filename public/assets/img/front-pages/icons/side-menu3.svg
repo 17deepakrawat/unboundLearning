@@ -1,0 +1,41 @@
+<svg width="99" height="99" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="g3072">
+<g id="g3074">
+<g id="Clip path group">
+<mask id="mask0_1238_25030" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="99" height="99">
+<g id="clipPath3080">
+<path id="path3078" d="M0.767578 0.896973H98.8706V99H0.767578V0.896973Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_1238_25030)">
+<g id="g3076">
+<g id="g3082">
+<path id="path3084" d="M15.1333 97.0835C13.1359 97.0835 11.5 95.4424 11.5 93.4362V43.2485C11.5 41.2424 13.135 39.6013 15.1333 39.6013H35.3429C37.7173 39.6013 39.0943 41.1418 39.7972 43.2485L41.6218 48.7195H84.5097C86.5082 48.7195 88.1428 50.3621 88.1428 52.3667V93.4362C88.1428 95.4424 86.5076 97.0835 84.5097 97.0835H15.1333Z" stroke="#FA8951" stroke-width="4" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3086">
+<path id="path3088" d="M74.5311 48.7197V13.3511H15.1328V39.6017" stroke="#FA8951" stroke-width="4" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3090">
+<path id="path3092" d="M84.5087 48.7192V2.81219H24.1523V12.3926" stroke="#FA8951" stroke-width="4" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3094">
+<path id="path3096" d="M30.1992 68.6531L49.8214 61.4741L69.4435 68.6531L49.8214 75.832L30.1992 68.6531Z" stroke="#FA8951" stroke-width="4" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3098">
+<path id="path3100" d="M60.192 72.4376V81.5501C57.0392 83.3704 53.4629 84.3286 49.8225 84.3286C46.1822 84.3286 42.6058 83.3704 39.4531 81.5501V72.4376" stroke="#FA8951" stroke-width="4" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3102">
+<path id="path3104" d="M67.5312 81.5503V70.3139" stroke="#FA8951" stroke-width="4" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3106">
+<path id="path3108" d="M24.1523 22.1929H65.5101" stroke="#FA8951" stroke-width="4" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3110">
+<path id="path3112" d="M24.1523 31.0342H65.5101" stroke="#FA8951" stroke-width="4" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

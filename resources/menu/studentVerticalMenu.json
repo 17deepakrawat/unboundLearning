@@ -1,0 +1,52 @@
+{
+    "menu": [
+      {
+        "name": "Student Dashboards",
+        "icon": "menu-icon tf-icons ti ti-smart-home",
+        "slug": "student.university",
+        "url" : "/student/university"
+      },
+      {
+        "url": "/student/profile",
+        "name": "My Profile",
+        "icon": "menu-icon tf-icons ti ti-users",
+        "slug": "student.profile"
+      },
+      {
+        "url": "/student/notification",
+        "name": "Notifications",
+        "icon": "menu-icon tf-icons ti ti-users-group",
+        "slug": "student.notification"
+      },
+      {
+        "url": "/student/syllabus",
+        "name": "My Syllabus",
+        "icon": "menu-icon tf-icons ti ti-user",
+        "slug": "student.syllabus"
+      },
+      {
+        "url": "/student/id-card",
+        "name": "ID Card",
+        "icon": "menu-icon tf-icons ti ti-link",
+        "slug": "student.id-card"
+      },
+      {
+        "url": "/student/lms",
+        "name": "LMS",
+        "icon": "menu-icon tf-icons ti ti-book",
+        "slug": "student.lms"
+      },
+      {
+        "url": "/student/assignment",
+        "name": "Assignments",
+        "icon": "menu-icon tf-icons ti ti-book",
+        "slug": "academics.program-types"
+      },
+      {
+        "url": "/student/query",
+        "name": "Submit A Query",
+        "icon": "menu-icon tf-icons ti ti-help",
+        "slug": "student.lms.submit-a-query"
+      }
+    ]
+  }

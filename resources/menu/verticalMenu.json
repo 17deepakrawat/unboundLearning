@@ -1,0 +1,464 @@
+{
+  "menu": [
+    {
+      "url": "/dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "dashboard",
+      "permission": "view dashboard"
+    },
+    {
+      "menuHeader": "Users & Roles",
+      "permissions": ["view permissions", "view roles", "view users"]
+    },
+    {
+      "url": "/users/permissions",
+      "name": "Permissions",
+      "icon": "menu-icon tf-icons ti ti-shield-cog",
+      "slug": "users.permissions",
+      "permission": "view permissions"
+    },
+    {
+      "url": "/users/roles",
+      "name": "Roles",
+      "icon": "menu-icon tf-icons ti ti-users-group",
+      "slug": "users.roles",
+      "permission": "view roles"
+    },
+    {
+      "url": "/users",
+      "name": "Users",
+      "icon": "menu-icon tf-icons ti ti-user",
+      "slug": "users",
+      "permission": "view users"
+    },
+    {
+      "menuHeader": "Academics",
+      "permissions": ["view verticals", "view departments", "view program-type", "view programs", "view specializations", "view syllabus"]
+    },
+    {
+      "url": "academics/verticals",
+      "name": "Verticals",
+      "icon": "menu-icon tf-icons ti ti-link",
+      "slug": "academics.verticals",
+      "permission": "view verticals"
+    },
+    {
+      "url": "academics/departments",
+      "name": "Departments",
+      "icon": "menu-icon tf-icons ti ti-book",
+      "slug": "academics.departments",
+      "permission": "view departments"
+    },
+    {
+      "url": "academics/program-types",
+      "name": "Program Types",
+      "icon": "menu-icon tf-icons ti ti-book",
+      "slug": "academics.program-types",
+      "permission": "view program-types"
+    },
+    {
+      "url": "academics/programs",
+      "name": "Programs",
+      "icon": "menu-icon tf-icons ti ti-book",
+      "slug": "academics.programs",
+      "permission": "view programs"
+    },
+    {
+      "url": "academics/specializations",
+      "name": "Specializations",
+      "icon": "menu-icon tf-icons ti ti-book",
+      "slug": "academics.specializations",
+      "permission": "view specializations"
+    },
+    {
+      "url": "academics/syllabus",
+      "name": "Syllbus/Subjects",
+      "icon": "menu-icon tf-icons ti ti-book",
+      "slug": "academics.syllabi",
+      "permission": "view syllabus"
+    },
+    {
+      "url": "academics/events",
+      "name": "Events",
+      "icon": "menu-icon tf-icons ti ti-calendar-event",
+      "slug": "academics.events",
+      "permission": "view events"
+    },
+    {
+      "menuHeader": "Leads",
+      "permissions": ["view leads", "view tasks", "view activities"]
+    },
+    {
+      "url": "manage/leads/list",
+      "name": "Leads",
+      "icon": "menu-icon tf-icons ti ti-id-badge",
+      "slug": "manage.leads.list",
+      "permission": "view leads"
+    },
+    {
+      "url": "manage/leads/newsletter-subscribers",
+      "name": "Newsletter Subscribers",
+      "icon": "menu-icon tf-icons ti ti-speakerphone",
+      "slug": "manage.leads.newsletter-subscribers",
+      "permission": "view leads"
+    },
+    {
+      "url": "website/contact-us/leads",
+      "name": "Contact Us",
+      "icon": "menu-icon tf-icons ti ti-user",
+      "slug": "website.contact-us.leads",
+      "permission": "view leads"
+    },
+    {
+      "url": "manage/leads/tasks",
+      "name": "Tasks",
+      "icon": "menu-icon tf-icons ti ti-list-check",
+      "slug": "manage.leads.tasks",
+      "permission": "view tasks"
+    },
+    {
+      "url": "manage/leads/activities",
+      "name": "Activities",
+      "icon": "menu-icon tf-icons ti ti-timeline-event-text",
+      "slug": "manage.leads.activities",
+      "permission": "view activities"
+    },
+    {
+      "menuHeader": "Students",
+      "permissions": ["view applications"]
+    },
+    {
+      "url": "manage/students/applications",
+      "name": "Applications",
+      "icon": "menu-icon tf-icons ti ti-file-description",
+      "slug": "students.applications",
+      "permission": "view applications"
+    },
+    {
+      "menuHeader": "Accounts",
+      "permissions": ["view offline-payments", "view online-payments", "view wallet-payments"]
+    },
+    {
+      "url": "/accounts/offline-payments",
+      "name": "Offline Payments",
+      "icon": "menu-icon tf-icons ti ti-receipt",
+      "slug": "accounts.offline-payments",
+      "permission": "view offline-payments"
+    },
+    {
+      "url": "/accounts/online-payments",
+      "name": "Online Payments",
+      "icon": "menu-icon tf-icons ti ti-credit-card",
+      "slug": "accounts.online-payments",
+      "permission": "view online-payments"
+    },
+    {
+      "url": "/accounts/wallet-payments",
+      "name": "Wallet Payments",
+      "icon": "menu-icon tf-icons ti ti-wallet",
+      "slug": "accounts.wallet-payments",
+      "permission": "view wallet-payments"
+    },
+    {
+      "menuHeader": "Website",
+      "permissions": ["view website-home-page", "view website-why-swayam-vidya", "view website-about-us", "view contact-us", "view website-become-a-partner", "view website-institutions-and-boards", "view website-courses", "view website-components", "view website-header", "view website-footer"]
+    },
+    {
+      "url": "website/content/home-page",
+      "name": "Home Page",
+      "icon": "menu-icon tf-icons ti ti-world",
+      "slug": "website.content.home-page",
+      "permission": "view website-home-page"
+    },
+    {
+      "url": "website/content/why-swayam-vidya",
+      "name": "Why Swayam Vidya",
+      "icon": "menu-icon tf-icons ti ti-world",
+      "slug": "website.content.why-swayam-vidya",
+      "permission": "view website-why-swayam-vidya"
+    },
+    {
+      "url": "website/content/about-us",
+      "name": "About Us",
+      "icon": "menu-icon tf-icons ti ti-world",
+      "slug": "website.content.about-us",
+      "permission": "view website-about-us"
+    },
+    {
+      "url": "website/content/contact-us",
+      "name": "Contact Us",
+      "icon": "menu-icon tf-icons ti ti-world",
+      "slug": "website.content.contact-us",
+      "permission": "view contact-us"
+    },
+    {
+      "url": "website/content/become-a-partner",
+      "name": "Become a Partner",
+      "icon": "menu-icon tf-icons ti ti-world",
+      "slug": "website.content.become-a-partner",
+      "permission": "view website-become-a-partner"
+    },
+    {
+      "url": "website/content/institutions-and-boards",
+      "name": "Institutions and Boards",
+      "icon": "menu-icon tf-icons ti ti-world",
+      "slug": "website.content.institutions-and-boards",
+      "permission": "view website-institutions-and-boards"
+    },
+    {
+      "url": "website/content/courses",
+      "name": "Courses",
+      "icon": "menu-icon tf-icons ti ti-world",
+      "slug": "website.content.courses",
+      "permission": "view website-courses"
+    },
+    {
+      "url": "website/content/components",
+      "name": "Components",
+      "icon": "menu-icon tf-icons ti ti-bolt",
+      "slug": "website.content.components",
+      "permission": "view website-components"
+    },
+    {
+      "url": "website/content/blogs",
+      "name": "Blogs",
+      "icon": "menu-icon tf-icons ti ti-bolt",
+      "slug": "website.content.blogs",
+      "permission": "view website-blogs"
+    },
+    {
+      "url": "website/content/career",
+      "name": "Career",
+      "icon": "menu-icon tf-icons ti ti-bolt",
+      "slug": "website.content.career",
+      "permission": "view website-career"
+    },
+    {
+      "url": "website/content/help-center",
+      "name": "Help Center",
+      "icon": "menu-icon tf-icons ti ti-bolt",
+      "slug": "website.content.help-center",
+      "permission": "view website-help-center"
+    },
+    {
+      "url": "website/help-center-feature",
+      "name": "Help Center Feature",
+      "icon": "menu-icon tf-icons ti ti-bolt",
+      "slug": "website.help-center-feature",
+      "permission": "view website-help-center-feature"
+    },
+    {
+      "url": "website/content/header",
+      "name": "Header",
+      "icon": "menu-icon tf-icons ti ti-layout-navbar",
+      "slug": "website.content.header",
+      "permission": "view website-header"
+    },
+    {
+      "url": "website/content/footer",
+      "name": "Footer",
+      "icon": "menu-icon tf-icons ti ti-layout-bottombar",
+      "slug": "website.content.footer",
+      "permission": "view website-footer"
+    },
+    {
+      "menuHeader": "Settings",
+      "permissions": ["view admission-types", "view paper-types", "view modes", "view fee-structures", "view schemes", "view admission-sessions", "view eligibility-criteria", "view student-status", "view sources", "view sub-sources", "view stages", "view lead-custom-fields", "view leads-assignment-rules", "view leads-activities"]
+    },
+    {
+      "name": "Admissions",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "settings.admissions",
+      "permissions": ["view admission-types", "view paper-types", "view modes", "view fee-structures", "view schemes", "view admission-sessions", "view eligibility-criteria", "view student-status"],
+      "submenu": [
+        {
+          "url": "settings/admissions/admission-types",
+          "name": "Admission Types",
+          "slug": "settings.admissions.admission-types",
+          "permission": "view admission-types"
+        },
+        {
+          "url": "settings/admissions/paper-types",
+          "name": "Paper Types",
+          "slug": "settings.admissions.paper-types",
+          "permission": "view paper-types"
+        },
+        {
+          "url": "settings/admissions/modes",
+          "name": "Modes",
+          "slug": "settings.admissions.modes",
+          "permission": "view modes"
+        },
+        {
+          "url": "settings/admissions/fee-structures",
+          "name": "Fee Structures",
+          "slug": "settings.admissions.fee-structures",
+          "permission": "view fee-structures"
+        },
+        {
+          "url": "settings/admissions/schemes",
+          "name": "Schemes",
+          "slug": "settings.admissions.schemes",
+          "permission": "view schemes"
+        },
+        {
+          "url": "settings/admissions/admission-sessions",
+          "name": "Admission Sessions",
+          "slug": "settings.admissions.admission-sessions",
+          "permission": "view admission-sessions"
+        },
+        {
+          "url": "settings/admissions/eligibility-criteria",
+          "name": "Eligibility Criteria",
+          "slug": "settings.admissions.eligibility-criteria",
+          "permission": "view eligibility-criteria"
+        },
+        {
+          "url":"settings/admissions/student-status",
+          "name":"Student Status",
+          "slug":"settings.addmissions.student-status",
+          "permission":"view student-status"
+        }
+      ]
+    },
+    {
+      "name": "Leads",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "settings.leads",
+      "permissions": ["view sources", "view sub-sources", "view stages", "view custom-fields", "view assignment-rules", "view activities"],
+      "submenu": [
+        {
+          "url": "settings/leads/sources",
+          "name": "Sources",
+          "slug": "settings.leads.sources",
+          "permission": "view sources"
+        },
+        {
+          "url": "settings/leads/sub-sources",
+          "name": "Sub-Sources",
+          "slug": "settings.leads.sub-sources",
+          "permission": "view sub-sources"
+        },
+        {
+          "url": "settings/leads/stages",
+          "name": "Stages",
+          "slug": "settings.leads.stages",
+          "permission": "view stages"
+        },
+        {
+          "url": "settings/leads/sub-stages",
+          "name": "Sub-Stages",
+          "slug": "settings.leads.sub-stages",
+          "permission": "view sub-stages"
+        },
+        {
+          "url": "settings/leads/custom-fields",
+          "name": "Custom Fields",
+          "slug": "settings.leads.custom-fields",
+          "permission": "view custom-fields"
+        },
+        {
+          "url": "settings/leads/assignment-rules",
+          "name": "Assignment Rules",
+          "slug": "settings.leads.assignment-rules",
+          "permission": "view assignment-rules"
+        },
+        {
+          "url": "settings/leads/activities",
+          "name": "Core Activities",
+          "slug": "settings.leads.activities",
+          "permission": "view activities"
+        }
+      ]
+    },
+    {
+      "name": "LMS",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "settings.lms",
+      "permissions": ["view e-books", "view videos", "view notes", "view question-banks", "view assignments", "view practicals", "view projects", "view query-type", "view query-sub-type"],
+      "submenu": [
+        {
+          "url": "settings/lms/e-books",
+          "name": "E-Books",
+          "slug": "settings.lms.e-books",
+          "permission": "view e-books"
+        },
+        {
+          "url": "settings/lms/videos",
+          "name": "Videos",
+          "slug": "settings.lms.videos",
+          "permission": "view videos"
+        },
+        {
+          "url": "settings/lms/notes",
+          "name": "Notes",
+          "slug": "settings.lms.notes",
+          "permission": "view notes"
+        },
+        {
+          "url": "settings/lms/question-banks",
+          "name": "Question Bank",
+          "slug": "settings.lms.question-banks",
+          "permission": "view question-banks"
+        },
+        {
+          "url": "settings/lms/assignments",
+          "name": "Assignments",
+          "slug": "settings.lms.assignments",
+          "permission": "view assignments"
+        },
+        {
+          "url": "settings/lms/practicals",
+          "name": "Practicals",
+          "slug": "settings.lms.practicals",
+          "permission": "view practicals"
+        },
+        {
+          "url": "settings/lms/projects",
+          "name": "Projects",
+          "slug": "settings.lms.projects",
+          "permission": "view projects"
+        },
+        {
+          "url": "settings/lms/query-type",
+          "name": "Query Type",
+          "slug": "settings.lms.query-type",
+          "permission": "view query-type"
+        },
+        {
+          "url": "settings/lms/query-sub-type",
+          "name": "Query Sub-Type",
+          "slug": "settings.lms.query-sub-type",
+          "permission": "view query-sub-type"
+        },
+        {
+          "url": "settings/lms/id-card",
+          "name": "ID-Card",
+          "slug": "settings.lms.id-card",
+          "permission": "view id-card"
+        },
+        {
+          "url": "settings/lms/notification",
+          "name": "Notification",
+          "slug": "settings.lms.notification",
+          "permission": "view notification"
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "settings.components",
+      "permissions": ["view languages", "view other-settings"],
+      "submenu": [
+        {
+          "url": "settings/components/languages",
+          "name": "Languages",
+          "slug": "settings.components.languages",
+          "permission": "view languages"
+        }
+      ]
+    }
+  ]
+}
