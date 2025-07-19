@@ -26547,8 +26547,9 @@ input:checked,
   align-items: center;
 }
 .ask_question_btn {
-  width: 134px;
-  height: 48px;
+  width: max-content !important;
+  height: max-content !important;
+  padding: 7px 10px !important;
   border-radius: 8px;
   background: #1e47a1;
   display: flex;
@@ -26684,7 +26685,7 @@ input:checked,
 
 .what-we-do-img {
   /* width: 767px; */
-  width:max-content;
+  width: max-content;
   height: 672px;
   flex-shrink: 0;
   border-radius: 0px 10px 10px 0px;
@@ -28581,7 +28582,7 @@ button.active .helper-row .helper-row-col .helper_nav_title .helper_t_article {
   border-radius: 6px;
   border: 1px solid rgba(27, 27, 27, 0.05);
   background: #973c2d6e;
-  min-height: 280px;
+  min-height: 261px;
 }
 
 .feature-card_img img {
@@ -28592,13 +28593,13 @@ button.active .helper-row .helper-row-col .helper_nav_title .helper_t_article {
 }
 
 .bottom-card_btn a {
-  background-color: #fafafa;
-  color: #1b1b1b;
+  background-color: #13447f !important;
+  color: white !important;
   font-family: 'Product Sans';
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 22px;
+  font-weight: 500 !important;
+  /* line-height: 22px; */
   border: none;
   box-shadow: none !important;
 }
@@ -28617,9 +28618,9 @@ button.active .helper-row .helper-row-col .helper_nav_title .helper_t_article {
   line-height: 22px;
 }
 
-.bottom-custom {
+/* .bottom-custom {
   border-left: 1px solid rgba(27, 27, 27, 0.1);
-}
+} */
 
 .help-center-home_title h1 {
   color: #1b1b1b;
@@ -28645,7 +28646,7 @@ button.active .helper-row .helper-row-col .helper_nav_title .helper_t_article {
 }
 
 .hm-faqs {
-  background-color: #fafcfe;
+  background-color: #d2877b4a;
 }
 
 .help-center_search-container {
@@ -37457,15 +37458,24 @@ border: 1px solid red
   }
 }
 @media (min-width: 300px) and (max-width: 425px) {
- .wrapper_career-banner {
+  .wrapper_career-banner {
     height: max-content !important;
   }
 }
 .text-primary {
   color: #13447f !important;
 }
-.help_home_btn{
-      background: #6e291d !important;
-    font-weight: 500 !important;
-    color: white !important;
+.help_home_btn {
+  background: #6e291d !important;
+  font-weight: 500 !important;
+  color: white !important;
+}
+.bottom-card {
+  border: solid 1px #13447f;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px #13447f4d, 0 1px 2px #13447f4d;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bottom-card:hover{
+   box-shadow: 0 14px 28px #13447f4d, 0 10px 10px #13447f4d;
 }

@@ -69,59 +69,75 @@
         }
 
         @media (min-width: 900px) and (max-width: 1070px) {
-    #faqAccordion {
-        width: 100% !important;
-        right: 0px !important;
-    }
-}
-@media(min-width:300px) and (max-width: 500px){
-  .swiper-container {
-    height: 170px !important;
-  }
-  .swiper-wrapper{
-    height: 132px !important;
+            #faqAccordion {
+                width: 100% !important;
+                right: 0px !important;
+            }
+        }
 
-  }
-  .swiper-slide {
-    width:250px !important;
-    height: 100px !important;
-  }
-  .home-center_carsousel-card {
-    width: 100% !important;}
-}
-@media(min-width:500px) and (max-width: 700px){
-  .swiper-container {
-    height: 300px !important;
-  }
-  .swiper-wrapper{
-    height: 200px !important;
+        @media(min-width:300px) and (max-width: 500px) {
+            .swiper-container {
+                height: 170px !important;
+            }
 
-  }
-  .swiper-slide {
-    width:350px !important;
-    height: 100px !important;
-  }
-  .home-center_carsousel-card {
-    width: 100% !important;}
-}
-@media(min-width:700px) and (max-width: 800px){
-  .swiper-container {
-    height: 300px !important;
-  }
-  .swiper-wrapper{
-    height: 200px !important;
+            .swiper-wrapper {
+                height: 132px !important;
 
-  }
-  .swiper-slide {
-    width:350px !important;
-    height: 100px !important;
-  }
-  .home-center_carsousel-card {
-    width: 100% !important;}
-}
-body{
-  overflow-x:clip !important; 
-}
+            }
+
+            .swiper-slide {
+                width: 250px !important;
+                height: 100px !important;
+            }
+
+            .home-center_carsousel-card {
+                width: 100% !important;
+            }
+        }
+
+        @media(min-width:500px) and (max-width: 700px) {
+            .swiper-container {
+                height: 300px !important;
+            }
+
+            .swiper-wrapper {
+                height: 200px !important;
+
+            }
+
+            .swiper-slide {
+                width: 350px !important;
+                height: 100px !important;
+            }
+
+            .home-center_carsousel-card {
+                width: 100% !important;
+            }
+        }
+
+        @media(min-width:700px) and (max-width: 800px) {
+            .swiper-container {
+                height: 300px !important;
+            }
+
+            .swiper-wrapper {
+                height: 200px !important;
+
+            }
+
+            .swiper-slide {
+                width: 350px !important;
+                height: 100px !important;
+            }
+
+            .home-center_carsousel-card {
+                width: 100% !important;
+            }
+        }
+
+        body {
+            overflow-x: clip !important;
+        }
     </style>
 @endsection
 @section('vendor-script')
@@ -130,24 +146,23 @@ body{
 @section('page-script')
     @vite(['resources/assets/js/front-page.js', 'resources/assets/vendor/libs/toastr/toastr.js'])
     <script type="module">
-        $('.ask_question_btn').click(function(){
-                var url = $(this).attr('href');
-                $.ajax({
-                    url:"{{route('cehck-registered-user')}}",
-                    type:"get",
-                    data:{url:url,type:"lms"},
-                    success:function(res)
-                    { 
-                        if(res.status=='error')
-                        {
-                            window.location.href = "/student/login";
-                        }
-                        else
-                        {
-                            window.location.href = res.slug;
-                        }                        
+        $('.ask_question_btn').click(function() {
+            var url = $(this).attr('href');
+            $.ajax({
+                url: "{{ route('cehck-registered-user') }}",
+                type: "get",
+                data: {
+                    url: url,
+                    type: "lms"
+                },
+                success: function(res) {
+                    if (res.status == 'error') {
+                        window.location.href = "/student/login";
+                    } else {
+                        window.location.href = res.slug;
                     }
-                })
+                }
+            })
         });
         $('.searchHelpCenter').on('click', function() {
             var query = $('#query').val();
@@ -227,39 +242,38 @@ body{
                     slidesPerView: 2,
                     spaceBetween: 90
                 }
-                
+
             }
         });
         const section = document.querySelector('.main-home-center');
-    const circle1 = document.querySelector('.center_home_circle1');
-    const circle2 = document.querySelector('.center_home_circle2');
+        const circle1 = document.querySelector('.center_home_circle1');
+        const circle2 = document.querySelector('.center_home_circle2');
 
-    // Create an intersection observer to detect when the section is in view
-    // const observer = new IntersectionObserver((entries, observer) => {
-    //     entries.forEach(entry => {
-    //         console.log(entry);
-            
-    //         if (entry.isIntersecting) {
-    //             // If the section is in view, keep the circles fixed
-    //             circle1.style.position = 'fixed';
-    //             circle2.style.position = 'fixed';
-    //         } else {
-    //             // If the section is out of view, remove the fixed position
-    //             circle1.style.display='none';
-    //             circle2.style.display='none';
-    //         }
-    //     });
-    // }, { threshold: 0.1 }); // Trigger when 10% of the section is in view
+        // Create an intersection observer to detect when the section is in view
+        // const observer = new IntersectionObserver((entries, observer) => {
+        //     entries.forEach(entry => {
+        //         console.log(entry);
 
-    // // Start observing the section
-    // observer.observe(section);
-    
+        //         if (entry.isIntersecting) {
+        //             // If the section is in view, keep the circles fixed
+        //             circle1.style.position = 'fixed';
+        //             circle2.style.position = 'fixed';
+        //         } else {
+        //             // If the section is out of view, remove the fixed position
+        //             circle1.style.display='none';
+        //             circle2.style.display='none';
+        //         }
+        //     });
+        // }, { threshold: 0.1 }); // Trigger when 10% of the section is in view
+
+        // // Start observing the section
+        // observer.observe(section);
     </script>
 @endsection
 @section('content')
 
 
-    <section class="pt150 main-home-center" >
+    <section class="pt150 main-home-center">
         <div class="container">
             <div class="wrapper_help-center-home position-relative">
                 <div class="row justify-content-between">
@@ -281,10 +295,13 @@ body{
                                                 <img src="{{ asset('assets/img/front-pages/icons/hc10.png') }}"
                                                     alt="">
                                             </button>
-                                            <input type="text" id="query" name="query" placeholder="Search the Helpcenter" class="ps-1">
-                                            <div class="blog-area-search wrapper_search-box h-auto dropdown-menu mt-3 mob_help_search_container"></div>
+                                            <input type="text" id="query" name="query"
+                                                placeholder="Search the Helpcenter" class="ps-1">
+                                            <div
+                                                class="blog-area-search wrapper_search-box h-auto dropdown-menu mt-3 mob_help_search_container">
+                                            </div>
                                         </div>
-                                        
+
                                     </div>
                                     {{-- <div class="col-12 col-md-5 col-lg-4">
                                         <div class="help-center_select-cnt float-md-end">
@@ -304,13 +321,13 @@ body{
                         <div class="help-center-home-cnt2 p-4 mb-5">
                             <h5 class="mb-4">Where to start</h5>
                             <ul class="ps-0">
-                                <li><a href="{{route('help_center_feature')}}"> Getting Started </a></li>
-                                <li><a href="{{route('help_center_feature')}}"> Account </a></li>
-                                <li><a href="{{route('help_center_feature')}}"> Billing </a></li>
-                                <li><a href="{{route('help_center_feature')}}"> Frequently Asked Questions </a></li>
-                                <li><a href="{{route('help_center_feature')}}"> Features </a></li>
-                                <li><a href="{{route('help_center_feature')}}"> Status </a></li>
-                                <li><a href="{{route('help_center_feature')}}"> Changelog </a></li>
+                                <li><a href="{{ route('help_center_feature') }}"> Getting Started </a></li>
+                                <li><a href="{{ route('help_center_feature') }}"> Account </a></li>
+                                <li><a href="{{ route('help_center_feature') }}"> Billing </a></li>
+                                <li><a href="{{ route('help_center_feature') }}"> Frequently Asked Questions </a></li>
+                                <li><a href="{{ route('help_center_feature') }}"> Features </a></li>
+                                <li><a href="{{ route('help_center_feature') }}"> Status </a></li>
+                                <li><a href="{{ route('help_center_feature') }}"> Changelog </a></li>
                             </ul>
                         </div>
 
@@ -322,7 +339,7 @@ body{
                 <div class="lock-img">
                     <img src="{{ asset('assets/img/front-pages/icons/hc16.png') }}" class="" alt="">
                 </div>
-              
+
             </div>
         </div>
         <div class="center_home_circle1"></div>
@@ -346,7 +363,7 @@ body{
                                 <p class="text-center">Everything you need to know to begin your learning journey.</p>
                             </div>
                             <div class="bottom-card_btn">
-                                <a href="{{route('help_center_feature')}}" class="btn btn-primary w-100">Learn More</a>
+                                <a href="{{ route('help_center_feature') }}" class="btn btn-primary w-100">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -364,7 +381,7 @@ body{
                                 </p>
                             </div>
                             <div class="bottom-card_btn">
-                                <a href="{{route('help_center_feature')}}" class="btn btn-primary w-100">Learn More</a>
+                                <a href="{{ route('help_center_feature') }}" class="btn btn-primary w-100">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -381,7 +398,7 @@ body{
                                 <p class="text-center">Step-by-step instructions on enrolling and navigating courses.</p>
                             </div>
                             <div class="bottom-card_btn">
-                                <a href="{{route('help_center_feature')}}" class="btn btn-primary w-100">Learn More</a>
+                                <a href="{{ route('help_center_feature') }}" class="btn btn-primary w-100">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -398,7 +415,7 @@ body{
                                 <p class="text-center">Access to guides, tutorials, and learning aids.</p>
                             </div>
                             <div class="bottom-card_btn">
-                                <a href="{{route('help_center_feature')}}" class="btn btn-primary w-100">Learn More</a>
+                                <a href="{{ route('help_center_feature') }}" class="btn btn-primary w-100">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -416,7 +433,7 @@ body{
                                 </p>
                             </div>
                             <div class="bottom-card_btn">
-                                <a href="{{route('help_center_feature')}}" class="btn btn-primary w-100">Learn More</a>
+                                <a href="{{ route('help_center_feature') }}" class="btn btn-primary w-100">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -433,7 +450,7 @@ body{
                                 <p class="text-center">Quick solutions to common questions and technical issues.</p>
                             </div>
                             <div class="bottom-card_btn">
-                                <a href="{{route('help_center_feature')}}" class="btn btn-primary w-100">Learn More</a>
+                                <a href="{{ route('help_center_feature') }}" class="btn btn-primary w-100">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -445,21 +462,23 @@ body{
 
     <!-- carsousel starts -->
     <section class="mb-5 py-3">
-        <div class="home-center_carsousel-card-main d-flex align-items-center overflow-hidden d-flex justify-content-end">
-            <div class="swiper-container ">
-                <div class="swiper-wrapper">
-                    @if(!empty($helpCenterData['slider_content']))
-                        @foreach(json_decode($helpCenterData['slider_content'],true) as $key => $value)
-                        <div class="swiper-slide">
-                            <div class="home-center_carsousel-card rounded-3 mb-3 me-3 me-md-4">
-                                <img src="{{ asset($value) }}"
-                                    class="home-center_carsousel-card-img img-fluid rounded-3" alt="">
-                            </div>
-                        </div>
-                        @endforeach
-                    @endif
+        <div class="container">
+            <div  class="home-center_carsousel-card-main d-flex align-items-center overflow-hidden d-flex justify-content-end">
+                <div class="swiper-container ">
+                    <div class="swiper-wrapper">
+                        @if (!empty($helpCenterData['slider_content']))
+                            @foreach (json_decode($helpCenterData['slider_content'], true) as $key => $value)
+                                <div class="swiper-slide">
+                                    <div class="home-center_carsousel-card rounded-3 mb-3 me-3 me-md-4">
+                                        <img src="{{ asset($value) }}"
+                                            class="home-center_carsousel-card-img img-fluid rounded-3" alt="">
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
+                    </div>
+                    <div class="swiper-pagination career_pagenation_h text-end helper_carousel_pagination"></div>
                 </div>
-                <div class="swiper-pagination career_pagenation_h text-end helper_carousel_pagination"></div>
             </div>
         </div>
     </section>
@@ -487,24 +506,26 @@ body{
                     <div class="col-12 col-md-7 col-lg-7">
                         <div class="home-center_accordion">
                             <div class="accordion" id="faqAccordion">
-                                @if(!empty($helpCenterData['faq_content']) )
-                                @foreach(json_decode($helpCenterData['faq_content'],true)['title'] as $key => $value)
-                                <div class="card accordion-item mb-3">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button type="button" class="accordion-button collapsed  faq_question"
-                                            data-bs-toggle="collapse" data-bs-target="#faq{{$key}}" aria-expanded="false"
-                                            aria-controls="faq{{$key}}">
-                                           <span class="faq_font_family"> {{$value}}</span>
-                                        </button>
-                                    </h2>
-                                    <div id="faq{{$key}}" class="accordion-collapse collapse"
-                                        data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body faq_ans pt-2 ">
-                                          <span class="faq_font_family">{{json_decode($helpCenterData['faq_content'],true)['description'][$key]}} </span>
+                                @if (!empty($helpCenterData['faq_content']))
+                                    @foreach (json_decode($helpCenterData['faq_content'], true)['title'] as $key => $value)
+                                        <div class="card accordion-item mb-3">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button type="button" class="accordion-button collapsed  faq_question"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq{{ $key }}"
+                                                    aria-expanded="false" aria-controls="faq{{ $key }}">
+                                                    <span class="faq_font_family"> {{ $value }}</span>
+                                                </button>
+                                            </h2>
+                                            <div id="faq{{ $key }}" class="accordion-collapse collapse"
+                                                data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body faq_ans pt-2 ">
+                                                    <span
+                                                        class="faq_font_family">{{ json_decode($helpCenterData['faq_content'], true)['description'][$key] }}
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                @endforeach
+                                    @endforeach
                                 @endif
                             </div>
                         </div>
@@ -532,7 +553,7 @@ body{
                                 <p>Stay updated with the latest announcements, course updates, and important alerts.</p>
                             </div>
                             <div class="bottom-card_btn">
-                                <a href="#" class="btn btn-primary ask_question_btn">Learn More</a>
+                                <a href="#" class="btn  ask_question_btn">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -549,7 +570,7 @@ body{
                                 <p>Explore insightful articles and tips to enhance your learning journey.</p>
                             </div>
                             <div class="bottom-card_btn">
-                                <a href="{{route('blogs')}}" class="btn btn-primary ">Learn More</a>
+                                <a href="{{ route('blogs') }}" class="btn  ask_question_btn">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -566,7 +587,8 @@ body{
                                 <p>Need help? Click here to connect with our support team for assistance.</p>
                             </div>
                             <div class="feature-card_btn">
-                                <a href="javascript:void(0)" id="getSupport" class="btn btn-primary px-4 ask_question_btn"> Get Started </a>
+                                <a href="javascript:void(0)" id="getSupport"
+                                    class="btn  ask_question_btn"> Get Started </a>
                             </div>
                         </div>
                     </div>

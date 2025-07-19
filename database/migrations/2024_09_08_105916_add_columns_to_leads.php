@@ -26,9 +26,9 @@ return new class extends Migration
       $table->string('mobile')->nullable();
       $table->string('alternate_email')->nullable();
 
-      $table->foreign('country_id')->references('id')->on('countries')->onDelete('set null');
-      $table->foreign('state_id')->references('id')->on('states')->onDelete('set null');
-      $table->foreign('city_id')->references('id')->on('cities')->onDelete('set null');
+      // $table->foreign('country_id')->references('id')->on('countries')->onDelete('set null');
+      // $table->foreign('state_id')->references('id')->on('states')->onDelete('set null');
+      // $table->foreign('city_id')->references('id')->on('cities')->onDelete('set null');
     });
   }
 
