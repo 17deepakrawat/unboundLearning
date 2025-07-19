@@ -83,9 +83,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <section class=" upskill-bg" id="hero-animation" class="mb-4"
     style="background: linear-gradient(135deg, #123d6a, #c04a39);">
-    <div class=" p-0 m-0 upskill-breadcrumb-bg">
-        <div class="container skill_d_container ">
-            <ul class="breadcrumb_list breadcrumb_lists course_ul ">
+    <div class=" p-0 m-0 upskill-breadcrumb-bg" style="background-color: #c04a39;">
+        <div class="container skill_d_container">
+            <ul class="breadcrumb_list breadcrumb_lists course_ul">
                 <a href="/">
                     <li class="breadcrumb_item mb-0 pb-0 other_page_b breadcrumb_icon breadcru">Home</li>
                 </a>
@@ -740,7 +740,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <section class="my-5 py-md-4">
     <div class="container skill_d_container">
-        <div class="wrapper_curriculum p-4 p-md-5">
+        <div class="wrapper_curriculum p-4 p-md-5" style="background: linear-gradient(135deg, #123d6a, #c04a39);">
             <div class="row align-items-center">
                 <div class="col-12 col-md-9 col-lg-10">
                     <div class="wrapper_curriculum-content">
