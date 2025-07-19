@@ -13035,7 +13035,7 @@ input:checked,
   justify-content: flex-start;
   align-items: flex-start;
   display: inline-flex;
-  width: 1000px;
+  /* width: 1000px; */
   min-height: 269px;
   height: auto;
   max-height: 400px;
@@ -13043,7 +13043,7 @@ input:checked,
 
 .university_card_body {
   width: auto;
-  max-width: 600px;
+  /* max-width: 600px; */
   height: 269px;
   max-height: 100%;
   /* margin-bottom: 20px; */
@@ -16624,7 +16624,7 @@ input:checked,
 }
 
 .upskill-main {
-  height: 590px;
+  /* height: 590px; */
 }
 
 .testiomonial_header {
@@ -16723,7 +16723,7 @@ input:checked,
   }
 
   .upskill-main {
-    height: 672px !important;
+    /* height: 672px !important; */
     width: 570px !important;
   }
 
@@ -16976,7 +16976,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 1019px !important;
+    /* height: 1019px !important; */
   }
 
   .skill_hero_banner {
@@ -17231,7 +17231,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 1218px !important;
+    /* height: 1218px !important; */
   }
 
   .skill_hero_banner {
@@ -17477,7 +17477,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 1024px !important;
+    /* height: 1024px !important; */
   }
 
   .skillhero_img {
@@ -17564,7 +17564,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 1218px !important;
+    /* height: 1218px !important; */
   }
 
   .skill_hero_banner {
@@ -17817,7 +17817,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 1130px !important;
+    /* height: 1130px !important; */
   }
 
   .skillhero_img {
@@ -17912,7 +17912,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 1218px !important;
+    /* height: 1218px !important; */
   }
 
   .skill_hero_banner {
@@ -18189,7 +18189,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 1079px !important;
+    /* height: 1079px !important; */
   }
 
   .skillhero_img {
@@ -19272,7 +19272,7 @@ input:checked,
   .upskill-bg {
     background-color: #1e47a1 !important;
     padding-top: 139px !important;
-    height: 1181px !important;
+    /* height: 1181px !important; */
   }
 
   .skill_hero_main_img_s {
@@ -19293,7 +19293,7 @@ input:checked,
   .upskill-bg {
     background-color: #1e47a1 !important;
     padding-top: 139px !important;
-    height: 1172px !important;
+    /* height: 1172px !important; */
   }
 
   .skillhero_img {
@@ -19503,7 +19503,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 1019px !important;
+    /* height: 1019px !important; */
   }
 }
 
@@ -19686,7 +19686,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 874px !important;
+    /* height: 874px !important; */
   }
 
   .join_skill_btn_t {
@@ -19759,7 +19759,7 @@ input:checked,
 
   .upskill-bg {
     padding-bottom: 0px !important;
-    height: 1004px !important;
+    /* height: 1004px !important; */
   }
 
   .mob_learn_des {
