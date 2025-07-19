@@ -26143,7 +26143,7 @@ input:checked,
   }
 
   .know_container {
-    height: 778px !important;
+    /* height: 778px !important; */
   }
 
   .kn-icon-al-3 {
@@ -26265,7 +26265,7 @@ input:checked,
   }
 
   .know_container {
-    height: 895px !important;
+    /* height: 895px !important; */
   }
 
   .kn-icon-al-3 {
@@ -27789,7 +27789,7 @@ input:checked,
 
 @media (min-width: 1000px) and (max-width: 1200px) {
   .know_container {
-    height: 790px !important;
+    /* height: 790px !important; */
   }
 }
 
@@ -27806,13 +27806,13 @@ input:checked,
   }
 
   .know_container {
-    height: 1068px !important;
+    /* height: 1068px !important; */
   }
 }
 
 @media (min-width: 400px) and (max-width: 768px) {
   .know_container {
-    height: 918px !important;
+    /* height: 918px !important; */
   }
 
   .circle_about_c3 {
@@ -27822,7 +27822,7 @@ input:checked,
 
 @media (min-width: 300px) and (max-width: 400px) {
   .know_container {
-    height: 1100px !important;
+    /* height: 1100px !important; */
   }
 
   .circle_about_c3 {
