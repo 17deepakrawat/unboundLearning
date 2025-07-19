@@ -65,14 +65,14 @@ class HelpCenterFeatureController extends Controller
     {
         if (Auth::check() && Auth::user()->hasPermissionTo('edit verticals')) {
             $request->validate([
-              'id' => ['required', 'exists:verticals,id'],
+              'id' => ['required', 'exists:help_center_features,id'],
               'content.meta' => ['required', 'array'],
               'content.meta.title' => ['required', 'string'],
               'content.section_1' => ['required', 'string'],
               'images.*' => ['required', 'image', 'mimes:webp,jpeg,png', 'max:300'],
             ]);
             try {
-              $feature = HelpCenterFeature::findOrFail($request->id);
+              $feature = HelpCenterFeature::findOrFail($id);
       
               $content = !empty($feature->content) ? json_decode($feature->content, true) : array();
               $content = $request->content;

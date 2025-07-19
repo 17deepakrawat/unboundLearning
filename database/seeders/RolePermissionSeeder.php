@@ -187,6 +187,10 @@ class RolePermissionSeeder extends Seeder
     'create wallet-payments',
     'edit wallet-payments',
     'delete wallet-payments',
+    'view website-help-center-feature',
+    'create website-help-center-feature',
+    'delete website-help-center-feature',
+    'edit website-help-center-feature'
   ];
 
   private $webSiteManagerPermissions = [

@@ -537,7 +537,66 @@
     <!-- faqs ends -->
 
 
-    <section>
+    {{-- <section>
+        <div class="container">
+            <div class="wrapper_bottom-cards my-5 py-md-4">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="bottom-card mb-4 p-3">
+                            <div class="feature-card_img">
+                                <img src="{{ asset('assets/img/front-pages/icons/hc7.png') }}" alt="">
+                            </div>
+                            <div class="feature-card_title">
+                                <h2>Notifications</h2>
+                            </div>
+                            <div class="feature-card_subtitle">
+                                <p>Stay updated with the latest announcements, course updates, and important alerts.</p>
+                            </div>
+                            <div class="bottom-card_btn">
+                                <a href="#" class="btn  ask_question_btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="bottom-card mb-4 p-3">
+                            <div class="feature-card_img">
+                                <img src="{{ asset('assets/img/front-pages/icons/hc8.png') }}" alt="">
+                            </div>
+                            <div class="feature-card_title">
+                                <h2>Read our Blogs</h2>
+                            </div>
+                            <div class="feature-card_subtitle">
+                                <p>Explore insightful articles and tips to enhance your learning journey.</p>
+                            </div>
+                            <div class="bottom-card_btn">
+                                <a href="{{ route('blogs') }}" class="btn  ask_question_btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="bottom-card bottom-custom mb-4 p-3 ps-md-5">
+                            <div class="feature-card_img">
+                                <img src="{{ asset('assets/img/front-pages/icons/hc9.png') }}" alt="">
+                            </div>
+                            <div class="feature-card_title">
+                                <h2>Get Support</h2>
+                            </div>
+                            <div class="feature-card_subtitle">
+                                <p>Need help? Click here to connect with our support team for assistance.</p>
+                            </div>
+                            <div class="feature-card_btn">
+                                <a href="javascript:void(0)" id="getSupport"
+                                    class="btn  ask_question_btn"> Get Started </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> --}}
+<section>
         <div class="container">
             <div class="wrapper_bottom-cards my-5 py-md-4">
                 <div class="row">
@@ -596,5 +655,4 @@
             </div>
         </div>
     </section>
-
 @endsection

@@ -28171,8 +28171,8 @@ input:checked,
 }
 .helper_article1_title_img_s {
   background-color: rgba(250, 250, 250, 1);
-  width: 560px;
-  height: 320px;
+  width: 100%;
+  height: 450px;
   border-radius: 10px;
 }
 .helper_article1_title_video_s {
@@ -28340,12 +28340,13 @@ input:checked,
 }
 .help_sticky {
   position: sticky;
-  top: 155px;
+  top: 230px;
   z-index: 99;
 }
 .help_sticky1 {
   position: sticky;
-  top: 0px;
+  /* top: 0px; */
+  top: 79px;
   z-index: 997;
   background-color: white;
   padding: 20px 0px;

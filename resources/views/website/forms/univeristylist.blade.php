@@ -459,7 +459,7 @@
 @endsection
 
 @section('content')
-    <section class="section-pys " id="hero-animation" class="mb-4">
+    {{-- <section class="section-pys " id="hero-animation" class="mb-4">
         <div class="breadcrumb_bg p-0 m-0">
             <div class="container ">
                 <ul class="breadcrumb_list breadcrumb_lists course_ul">
@@ -467,6 +467,20 @@
                         <li class="breadcrumb_item mb-0 pb-0 other_page_b breadcrumb_icon">Home</li>
                     </a>
                     <li class="breadcrumb_item mb-0 pb-0 current_page_b">Our Knowledge Partners</li>
+                </ul>
+            </div>
+        </div>
+    </section> --}}
+     <section class="" id="hero-animation" class="mb-4">
+        <div class=" p-0 m-0 breadcrumb_bg">
+            <div class="container  ">
+                <ul class="breadcrumb_list breadcrumb_lists course_ul course_breadcrumb_li">
+                    <li class="breadcrumb_item mb-0 pb-0 other_page_b breadcrumb_icon text-white fs-4">
+                        <a href="/" class="text-white">
+                            Home
+                        </a>
+                    </li>
+                    <li class="breadcrumb_item mb-0 pb-0 current_page_b text-white fs-4">Get Started</li>
                 </ul>
             </div>
         </div>
