@@ -1,4 +1,5 @@
 @php
+
   $configData = Helper::appClasses();
   $tags = !empty($tags->meta) ? json_decode($tags->meta, true) : [];
   $authorImage = !empty($blogDetails->author_image)?asset($blogDetails->author_image):asset('assets/img/avatars/1.png');
@@ -550,11 +551,13 @@ $('.searchBlogs').on('click',function(){
   @php
     $content = !empty($blogDetails?->content) ? json_decode($blogDetails?->content, true) : [];
   @endphp
-  <section class="blog_detail_banner d-flex justify-content-center align-items-center" style="background-image: url('{{ asset(!empty($blogDetails?->images) ? json_decode($blogDetails?->images, true)[1] : '') }}');">
+  <section class="blog_detail_banner d-flex justify-content-center align-items-center" style="background: linear-gradient(135deg, #123d6a, #c04a39);">
     <div class="container  d-flex justify-content-center align-items-center blog_detail_banner_s">
       <p class="blog_detail_banner_t">{{ $blogDetails?->name }}</p>
     </div>
   </section>
+
+
   <section class="my-md-5 py-md-5 my-5 section_blog">
     <div class="container blog_container">
       <div class="row">
