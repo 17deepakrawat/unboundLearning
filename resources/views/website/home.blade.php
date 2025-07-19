@@ -240,8 +240,8 @@
         }
 
         /* .home_skill_swipper_container .swiper-wrapper .swiper-slide:first-child {
-                                                                                          margin-left: 26%;
-                                                                                      } */
+                                                                                              margin-left: 26%;
+                                                                                          } */
 
         @media(min-width: 300px) and (max-width: 500px) {
             .trending_slider_card {
@@ -362,7 +362,7 @@
 @section('page-script')
     @vite(['resources/assets/js/front-page.js', 'resources/assets/vendor/libs/toastr/toastr.js'])
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> --}}
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script type="module">
         // document.addEventListener("DOMContentLoaded", function() {
@@ -526,40 +526,42 @@
         });
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-    // Register ScrollTrigger plugin
-    gsap.registerPlugin(ScrollTrigger);
+        document.addEventListener("DOMContentLoaded", function() {
+            // Register ScrollTrigger plugin
+            gsap.registerPlugin(ScrollTrigger);
 
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#hero-animation",  // your banner section
-            start: "top 80%",            // when section top hits 80% of viewport
-            toggleActions: "play none none reset", // play on enter, reset on leave
-        },
-        defaults: { ease: "power3.out", duration: 1 }
-    });
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#hero-animation", // your banner section
+                    start: "top 80%", // when section top hits 80% of viewport
+                    toggleActions: "play none none reset", // play on enter, reset on leave
+                },
+                defaults: {
+                    ease: "power3.out",
+                    duration: 1
+                }
+            });
 
-    tl.from("#gsap-heading", {
-        y: -40,
-        opacity: 0,
-    })
-    .from("#gsap-subheading", {
-        y: 30,
-        opacity: 0,
-    }, "-=0.5")
-    .from("#gsap-button", {
-        scale: 0.95,
-        opacity: 0,
-        ease: "back.out(1.5)",
-        duration: 0.9
-    }, "-=0.4")
-    .from("#gsap-image", {
-        x: 80,
-        opacity: 0,
-        duration: 1.1,
-    }, "-=0.7");
-});
-
+            tl.from("#gsap-heading", {
+                    y: -40,
+                    opacity: 0,
+                })
+                .from("#gsap-subheading", {
+                    y: 30,
+                    opacity: 0,
+                }, "-=0.5")
+                .from("#gsap-button", {
+                    scale: 0.95,
+                    opacity: 0,
+                    ease: "back.out(1.5)",
+                    duration: 0.9
+                }, "-=0.4")
+                .from("#gsap-image", {
+                    x: 80,
+                    opacity: 0,
+                    duration: 1.1,
+                }, "-=0.7");
+        });
     </script>
 
 
@@ -1195,7 +1197,42 @@
                         <div class="swiper-wrapper">
 
                             <!-- Repeat this swiper-slide -->
-                            <div class="swiper-slide">
+                            @php
+                                $testimonials = array_key_exists('testimonials', $components)
+                                    ? $components['testimonials']
+                                    : [
+                                        'heading' => 'What students say',
+                                        'sub_heading' =>
+                                            'See what our customers have to<br class="d-none d-xl-block" />say about their experience.',
+                                        'card' => [],
+                                    ];
+                            @endphp
+                            @foreach ($testimonials['card'] as $testimonial)
+                                <div class="swiper-slide">
+                                    <div class="card card-body">
+                                        <div class="content">
+                                            <p class="text-black"> {{ $testimonial['description'] }}</p>
+
+                                        </div>
+                                        <div class="testimonail_profile mt-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="{{ asset('assets/img/front-pages/icons/Ellipse 13.svg') }}"
+                                                    class="rounded-circle" width="50" alt="Student Image">
+                                                <div class="text-start">
+                                                    <h5 class="mb-0 text-black">{{ trim($testimonial['student']['name']) }}</h5>
+                                                    <p class="mb-0 small text-muted">{{ $testimonial['student']['institute'] }}                                                        
+                                                    </p>
+                                                    <p class="mb-0 testimonial_subtext2">Learner
+                                                        <img src="{{ asset('assets/img/front-pages/icons/Ikon.svg') }}"
+                                                            alt="" width="15" height="15">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                            {{-- <div class="swiper-slide">
                                 <div class="card card-body">
                                     <div class="content">
                                         <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -1226,7 +1263,6 @@
                                             Animi totam voluptatibus impedit debitis amet aspernatur earum cumque sit rem
                                             quaerat tenetur, officia distinctio molestias tempore neque quia minima culpa
                                             molestiae.</p>
-
                                     </div>
                                     <div class="testimonail_profile mt-3">
                                         <div class="d-flex align-items-center gap-3">
@@ -1311,30 +1347,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card card-body">
-                                    <div class="content">
-                                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Animi totam voluptatibus impedit debitis amet aspernatur earum cumque sit rem
-                                            quaerat tenetur, officia distinctio molestias tempore neque quia minima culpa
-                                            molestiae.</p>
-                                    </div>
-                                    <div class="testimonail_profile mt-3">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <img src="{{ asset('assets/img/front-pages/icons/Ellipse 13.svg') }}"
-                                                class="rounded-circle" width="50" alt="Student Image">
-                                            <div class="text-start">
-                                                <h5 class="mb-0 text-black">Deepak Singh Rawat</h5>
-                                                <span class="small text-muted">The Author
-                                                    <img src="{{ asset('assets/img/front-pages/icons/Ikon.svg') }}"
-                                                        alt="" width="15" height="15">
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> --}}
                             <!-- End slide -->
 
                         </div>
