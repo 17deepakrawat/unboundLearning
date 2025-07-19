@@ -13035,7 +13035,7 @@ input:checked,
   justify-content: flex-start;
   align-items: flex-start;
   display: inline-flex;
-  /* width: 1000px; */
+  width: fit-content !important;
   min-height: 269px;
   height: auto;
   max-height: 400px;
@@ -13151,7 +13151,7 @@ input:checked,
   text-transform: capitalize;
   line-height: 27px;
   word-wrap: break-word;
-  width: 400px;
+  width: fit-content !important;
   /* margin-bottom: 20px; */
 }
 
@@ -37480,3 +37480,6 @@ border: 1px solid red
 .bottom-card:hover{
    box-shadow: 0 14px 28px #13447f4d, 0 10px 10px #13447f4d;
 }
+/* .univeristy_list_card_m{
+  min-width:600px;
+} */
