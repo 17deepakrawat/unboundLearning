@@ -119,7 +119,7 @@
             <div class="row g-3">
               <div class="col-md-12">
                 <label class="form-label" for="email">Email</label>
-                <input type="email" id="email" name="content[email]" value="{{ array_key_exists('email', $content) ? $content['email'] : '' }}" class="form-control" placeholder="ex: contact@ {{ config('variables.siteUrl') }}" autofocus required />
+                <input type="text" id="email" name="content[email]" value="{{ array_key_exists('email', $content) ? $content['email'] : '' }}" class="form-control" placeholder="ex: contact@ {{ config('variables.siteUrl') }}" autofocus required />
               </div>
 
               <div class="col-md-12">

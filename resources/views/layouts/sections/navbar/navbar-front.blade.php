@@ -122,7 +122,7 @@
                         </a>
                     </li>
                     <li class="nav-item d-block d-lg-none  {{ $activeClass }}">
-                        <a href="{{ route('help_center_home') }}" class="nav-link fw-medium" aria-expanded="false">
+                        <a href="{{ route('contact-us') }}" class="nav-link fw-medium" aria-expanded="false">
                             <span class="navfront_text">Contact</span>
                         </a>
                     </li>
@@ -333,7 +333,7 @@
                         <a class="dropdown-item  text-black fs-6" href="{{ route('career') }}">Career</a>
                         <a class="dropdown-item  text-black fs-6" href="{{ route('blogs') }}">Blogs</a>
                         <a class="dropdown-item  text-black fs-6"
-                            href="{{ route('help_center_home') }}">Contact
+                            href="{{ route('contact-us') }}">Contact
                             Us</a>
                         <div class="dropdown-divider mb-0 mt-0"></div>
                         <a class="dropdown-item  text-black fs-6"

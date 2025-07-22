@@ -124,8 +124,6 @@
                 width: 100% !important;
             }
         }
-
-       
     </style>
 @endsection
 
@@ -141,7 +139,7 @@
 @endsection
 
 @section('content')
-    <section class="section-pys " id="hero-animation" class="mb-4">
+    {{-- <section class="section-pys " id="hero-animation" class="mb-4">
         <div class="breadcrumb_bg p-0 m-0">
             <div class="container university_containers">
                 <ul class="breadcrumb_list breadcrumb_lists course_ul ">
@@ -154,6 +152,23 @@
                         </a>
                     </div>
                     <li class="breadcrumb_item mb-0 pb-0 current_page_b ">{{ $vertical->fullName }}</li>
+                </ul>
+            </div>
+        </div>
+    </section> --}}
+    <section class="" id="hero-animation" class="mb-4">
+        <div class=" p-0 m-0 breadcrumb_bg">
+            <div class="container  ">
+                <ul class="breadcrumb_list breadcrumb_lists course_ul course_breadcrumb_li">
+                    <li class="breadcrumb_item mb-0 pb-0 other_page_b breadcrumb_icon text-white fs-4">
+                        <a href="/" class="text-white">
+                            Home
+                        </a>
+                    </li>
+                    <a href="{{ route('institutions-and-boards') }}">
+                        <li class="breadcrumb_item mb-0 pb-0 other_page_b breadcrumb_icon text-white">Our Knowledge Partner</li>
+                    </a>
+                    <li class="breadcrumb_item mb-0 pb-0 current_page_b  text-white">{{ $vertical->fullName }}</li>
                 </ul>
             </div>
         </div>
@@ -318,7 +333,7 @@
             </div>
         </div>
     </section>
-    <section class="section-py mob_py">
+    {{-- <section class="section-py mob_py">
         <div class="container custom_testimonail_slide">
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
@@ -506,13 +521,10 @@
                                     </div>
                                 </div>
                             @endif
-                        </div>
-                        <!-- Add Pagination -->
-                        {{-- <div class="swiper-pagination"></div> --}}
-
+                        </div>                       
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection

@@ -13756,12 +13756,15 @@ input:checked,
 }
 
 .universityDetail-heading {
-  color: #1e47a1;
+  color: #742113 !important;
+  background-color: #bd483436 !important;
   font-family: 'Product Sans';
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding: 4px 6px;
+  border-radius: 5px
 }
 
 .universityDetail-details-container {
@@ -13828,7 +13831,7 @@ input:checked,
   line-height: normal;
 }
 
-.custom-line::before {
+/* .custom-line::before {
   content: '';
   position: absolute;
   height: 2px;
@@ -13836,9 +13839,9 @@ input:checked,
   background-color: #d5dded;
   top: 50%;
   right: 0;
-}
+} */
 
-.custom-line2::before {
+/* .custom-line2::before {
   content: '';
   position: absolute;
   height: 2px;
@@ -13846,7 +13849,7 @@ input:checked,
   background-color: #d5dded;
   top: 50%;
   right: 0;
-}
+} */
 
 .approved-by-subtitle {
   color: #000;
