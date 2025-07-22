@@ -7,31 +7,78 @@
             padding-left: 0px !important;
         }
     }
-    @media(min-width: 300px) and (max-width: 429px){
-  .university_scroll {
-    height: 60vh !important;
-  }
-}
-.custom_modal_fade {
-  background: #0000009c !important; 
-    }
-.online_degree_hr_s{
-    padding-bottom: 25px;
-}
-@media(min-width: 300px) and (max-width: 999px){
-  .online_degree_t {
-    margin-bottom: 20px;
-  }
-  .online_degree_t p, .uninversity_online_degree_t{
-    text-align: center !important;
-  }
-}
 
-        .nav-tabs .nav-link.active,
-        .nav-tabs .nav-item.show .nav-link {
-
-            background: #f5f5f5 !important;
+    @media(min-width: 300px) and (max-width: 429px) {
+        .university_scroll {
+            height: 60vh !important;
         }
+    }
+
+    .custom_modal_fade {
+        background: #0000009c !important;
+    }
+
+    .online_degree_hr_s {
+        padding-bottom: 25px;
+    }
+
+    @media(min-width: 300px) and (max-width: 999px) {
+        .online_degree_t {
+            margin-bottom: 20px;
+        }
+
+        .online_degree_t p,
+        .uninversity_online_degree_t {
+            text-align: center !important;
+        }
+    }
+
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link {
+
+        background: #f5f5f5 !important;
+    }
+
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link {
+        background: #0d3f7c !important;
+        color: white !important;
+    }
+
+    .active .univer_silde_tab {
+        color: white !important;
+    }
+
+    /* .univer_silde_tab{
+        color: white !important;
+    } */
+    .university_side_nav_btn {
+        width: fit-content;
+        height: 41px;
+        background: #bd483436;
+        border-radius: 10px;
+        border: 1px #bd4834 solid;
+        margin-left: 15px;
+    }
+
+    .university_hr_sidebart {
+        background: none !important
+    }
+
+    .university_side_nav_text {
+        color: #742113 !important;
+    }
+
+    .university_hr_sidebar_s {
+        background: #bd483436;
+        border-radius: 3px;
+        padding: 4px 12px;
+    }
+
+    .university_hr_sidebart {
+
+        color: #742113 !important;
+    }
 </style>
 <script>
     function downloadEBrochure() {
@@ -47,7 +94,6 @@
             }
         })
     }
-  
 </script>
 
 <div class="offcanvas-header new_header_p_uni_slide1">
@@ -58,9 +104,9 @@
 <div class="padding_university_side_section new_header_p_uni_slide">
     <div class="container univeristy_side_container p-0">
         <div class="d-flex justify-content-between">
-            <div class="d-flex flex-row align-items-start mob_university_top_logo ">
+            <div class="d-flex flex-row align-items-center mob_university_top_logo ">
                 <div class="">
-                    <img src="{{ asset($vertical->logo) }}"class="app-brand-logo demo navfront_logowh">
+                    <img src="{{ asset($vertical->logo) }}"class="app-brand-logo demo navfront_logowh rounded">
                 </div>
 
                 <div class="">
@@ -71,10 +117,9 @@
                 </div>
 
                 <div class="">
-                    <button class="university_side_brochure shadow-none bg-white border-none"
-                        onclick="downloadEBrochure()"><i
-                            class="ti ti-cloud-download university_side_brochure_icon"></i><span
-                            class="university_side_brochure_t">Brochure </span></button>
+                    <button class="university_side_nav_btn " onclick="downloadEBrochure()"><i
+                            class="ti ti-cloud-download university_side_nav_text"></i><span
+                            class="university_side_nav_text">Brochure </span></button>
                 </div>
 
             </div>
@@ -84,25 +129,28 @@
                         class="fw-bold mt-1">{!! auth('student')->check() ? 'Logged In' : 'Account</span><i class="ti ti-user-circle navfront_icon"></i>' !!}</span>
             </div> --}}
             <div class="d-none d-md-block d-lg-block d-xl-block">
-              <span class="navfront_colortext side_univerity_account ">
-                @if (auth('student')->check())
-                  <a href="{{ route('student.dashboard') }}" class="d-flex flex-row align-items-center" style="column-gap: 3px;">                   
-                      <div class="avatar avatar-xs me-2">
-                        <img src="{{ auth('student')->check() ? (!empty(auth('student')->user()->avatar) ? (strpos(auth('student')->user()->avatar, 'https://') === true ? auth('student')->user()->avatar : asset(auth('student')->user()->avatar)) : asset('assets/img/avatars/1.png')) : asset('assets/img/avatars/1.png') }}"
-                              alt class="h-auto rounded-circle">
-                      </div>
-                      <span class="fw-bold mt-1 know_text_avator_name"> {{auth('student')->user()->first_name}} </span>
-                  </a>
-                @else
-                  Account</span><i class="ti ti-user-circle navfront_icon mt-2"></i>
+                <span class="navfront_colortext side_univerity_account ">
+                    @if (auth('student')->check())
+                        <a href="{{ route('student.dashboard') }}" class="d-flex flex-row align-items-center"
+                            style="column-gap: 3px;">
+                            <div class="avatar avatar-xs me-2">
+                                <img src="{{ auth('student')->check() ? (!empty(auth('student')->user()->avatar) ? (strpos(auth('student')->user()->avatar, 'https://') === true ? auth('student')->user()->avatar : asset(auth('student')->user()->avatar)) : asset('assets/img/avatars/1.png')) : asset('assets/img/avatars/1.png') }}"
+                                    alt class="h-auto rounded-circle">
+                            </div>
+                            <span class="fw-bold mt-1 know_text_avator_name"> {{ auth('student')->user()->first_name }}
+                            </span>
+                        </a>
+                    @else
+                        Account
+                </span><i class="ti ti-user-circle navfront_icon mt-2"></i>
                 @endif
-                
+
             </div>
         </div>
     </div>
 
-    
-  </div>
+
+</div>
 </div>
 
 <div class="university_navpill ">
@@ -147,60 +195,66 @@
                         <div class="">
                             <div class="university_hr_sidebar_s"><span class="university_hr_sidebart">About
                                     University</span></div>
-                            <div class="university_hr_sidebar"></div>
+                            {{-- <div class="university_hr_sidebar"></div> --}}
                         </div>
                         <div class="university_sidemenu_subp mb-0">
                             {!! array_key_exists('section_1', $content) ? $content['section_1'] : '' !!}
                         </div>
-                       <div class="row online_degree_hr_s">
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0 online_degree_t2  mt-3">
-                        <div class="online_degree_hr online_degree_hr_know"></div>
-                    </div>
-                    <div class="col-lg-8 col-md-6 col-sm-6 col-6 online_degree_t mt-3">
-                        <p class="mb-0">Why should you pursue an Online Degree from {{$vertical->name}} ({{$vertical->vertical_name}})?</p>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0 online_degree_t2  mt-3"
-                        style="display: flex; justify-content:end;">
-                        <div class="online_degree_hr online_degree_hr_know"></div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="d-flex flex-row mob_pursue_online mob_pursue_online_p">
-                            <div class="uninversity_online_degree">
-                                <img src="{{ asset('assets/img/front-pages/icons/side-menu5.svg') }}" alt="">
-                                <p class="uninversity_online_degree_t">Live interactive
-                                    Sessions</p>
-
+                        <div class="row online_degree_hr_s">
+                            <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0 online_degree_t2  mt-3">
+                                <div class="online_degree_hr online_degree_hr_know"></div>
                             </div>
-                            <div class="uninversity_online_degree">
-                                <img src="{{ asset('assets/img/front-pages/icons/side-menu4.svg') }}" alt="">
-                                <p class="uninversity_online_degree_t">Recorded
-                                    Lectures</p>
-
+                            <div class="col-lg-8 col-md-6 col-sm-6 col-6 online_degree_t mt-3">
+                                <p class="mb-0">Why should you pursue an Online Degree from {{ $vertical->name }}
+                                    ({{ $vertical->vertical_name }})?</p>
                             </div>
-                            <div class="uninversity_online_degree">
-                                <img src="{{ asset('assets/img/front-pages/icons/side-menu3.svg') }}" alt="">
-                                <p class="uninversity_online_degree_t">Industry Oriented
-                                    Curriculum</p>
-
+                            <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0 online_degree_t2  mt-3"
+                                style="display: flex; justify-content:end;">
+                                <div class="online_degree_hr online_degree_hr_know"></div>
                             </div>
-                            <div class="uninversity_online_degree">
-                                <img src="{{ asset('assets/img/front-pages/icons/side-menu2.svg') }}" alt="">
-                                <p class="uninversity_online_degree_t">Career
-                                    Growth</p>
+                            <div class="col-lg-12">
+                                <div class="d-flex flex-row mob_pursue_online mob_pursue_online_p">
+                                    <div class="uninversity_online_degree">
+                                        <img src="{{ asset('assets/img/front-pages/icons/side-menu5.svg') }}"
+                                            alt="">
+                                        <p class="uninversity_online_degree_t">Live interactive
+                                            Sessions</p>
 
-                            </div>
-                            <div class="uninversity_online_degree">
-                                <img src="{{ asset('assets/img/front-pages/icons/side-menu1.svg') }}" alt="">
-                                <p class="uninversity_online_degree_t">
-                                    Experiential
-                                    Learning
-                                </p>
+                                    </div>
+                                    <div class="uninversity_online_degree">
+                                        <img src="{{ asset('assets/img/front-pages/icons/side-menu4.svg') }}"
+                                            alt="">
+                                        <p class="uninversity_online_degree_t">Recorded
+                                            Lectures</p>
+
+                                    </div>
+                                    <div class="uninversity_online_degree">
+                                        <img src="{{ asset('assets/img/front-pages/icons/side-menu3.svg') }}"
+                                            alt="">
+                                        <p class="uninversity_online_degree_t">Industry Oriented
+                                            Curriculum</p>
+
+                                    </div>
+                                    <div class="uninversity_online_degree">
+                                        <img src="{{ asset('assets/img/front-pages/icons/side-menu2.svg') }}"
+                                            alt="">
+                                        <p class="uninversity_online_degree_t">Career
+                                            Growth</p>
+
+                                    </div>
+                                    <div class="uninversity_online_degree">
+                                        <img src="{{ asset('assets/img/front-pages/icons/side-menu1.svg') }}"
+                                            alt="">
+                                        <p class="uninversity_online_degree_t">
+                                            Experiential
+                                            Learning
+                                        </p>
+                                    </div>
+
+                                </div>
                             </div>
 
                         </div>
-                    </div>
-
-                </div>
                         <div class="row">
                             <div class="col-lg-12 mt-4">
                                 {{-- <div class="d-flex flex-row">
@@ -211,7 +265,7 @@
                                 <div class="">
                                     <div class="university_hr_sidebar_s"><span class="university_hr_sidebart">Approved
                                             By</span></div>
-                                    <div class="university_hr_sidebar"></div>
+                                    {{-- <div class="university_hr_sidebar"></div> --}}
                                 </div>
                                 <p class="university_approvals">Approvals to look for before selecting a university
                                 </p>
@@ -236,14 +290,15 @@
                                 <div class="">
                                     <div class="university_hr_sidebar_s"><span class="university_hr_sidebart">Sample
                                             Certificate</span></div>
-                                    <div class="university_hr_sidebar"></div>
+                                    {{-- <div class="university_hr_sidebar"></div> --}}
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="approv_row ">
                                     @if (array_key_exists('sample_certificates', $images))
                                         @foreach ($images['sample_certificates'] as $sampleCertificate)
-                                            <div class="university_ugc1 cursor-pointer" onclick="viewCertificate('{{ $sampleCertificate }}')">
+                                            <div class="university_ugc1 cursor-pointer"
+                                                onclick="viewCertificate('{{ $sampleCertificate }}')">
                                                 <div
                                                     class="sample_certificate_img d-flex align-items-center justify-content-center">
                                                     <img src="{{ asset($sampleCertificate) }}"
@@ -266,7 +321,7 @@
                         <div class="">
                             <div class="university_hr_sidebar_s "><span class="university_hr_sidebart">E - Learning
                                     Experience</span></div>
-                            <div class="university_hr_sidebar"></div>
+                            {{-- <div class="university_hr_sidebar"></div> --}}
                         </div>
                         <div class="row approv_row learning_title_row">
                             @if (!empty($content) && array_key_exists('e_learning', $content))
@@ -287,7 +342,7 @@
                         <div class="">
                             <div class="university_hr_sidebar_s"><span class="university_hr_sidebart">Alumni Talk &
                                     Reviews</span></div>
-                            <div class="university_hr_sidebar"></div>
+                            {{-- <div class="university_hr_sidebar"></div> --}}
                         </div>
                         <div class="row justify-content-center alumni-row">
                             <div class="col-lg-12 mb-3">
@@ -345,7 +400,7 @@
                         <div class="">
                             <div class="university_hr_sidebar_s"><span class="university_hr_sidebart">Placement</span>
                             </div>
-                            <div class="university_hr_sidebar"></div>
+                            {{-- <div class="university_hr_sidebar"></div> --}}
                         </div>
                         {{-- <div class="row mt-4 approv_row">
                             <div class="col-lg-3 col-md-3 col-sm-6 university_ugc_img">

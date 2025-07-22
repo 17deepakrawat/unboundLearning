@@ -433,6 +433,10 @@ p{
     font-family: 'Product Sans';
  
 }
+.mb-0{
+  margin-bottom: 0px !important;
+}
+
     </style>
 @endsection
 
@@ -589,7 +593,7 @@ p{
 @endsection
 
 @section('content')
-    <section class="section-pys1 mb-0 pb-0 " id="hero-animation" class="mb-4">
+    {{-- <section class="section-pys1 mb-0 pb-0 " id="hero-animation" class="mb-4">
         <div class="breadcrumb_bg p-0 m-0">
             <div class="container  course-container ">
                 <ul class="breadcrumb_list breadcrumb_lists course_ul">
@@ -605,10 +609,32 @@ p{
                 </ul>
             </div>
         </div>
-    </section>
+    </section> --}}
+     {{-- <section class="mb-0" id="hero-animation" >
+        <div class=" p-0 m-0 mb-0 breadcrumb_bg">
+            <div class="container  ">
+                <ul class="breadcrumb_list breadcrumb_lists course_ul course_breadcrumb_li">
+                    <li class="breadcrumb_item mb-0 pb-0 other_page_b breadcrumb_icon text-white fs-4">
+                        <a href="/" class="text-white">
+                            Home
+                        </a>
+                    </li>
+                    <li class="breadcrumb_item mb-0 pb-0 current_page_b text-white fs-4">{{ $program->name }}</li>
+                </ul>
+            </div>
+        </div>
+    </section> --}}
     <section>
-        <div class="coursedetail_bg">
+        <div class="coursedetail_bg" style="padding-top:100px !important;">
             <div class="container  course-container">
+                 <ul class="breadcrumb_list breadcrumb_lists course_ul course_breadcrumb_li">
+                    <li class="breadcrumb_item mb-0 pb-0 other_page_b breadcrumb_icon text-white fs-4">
+                        <a href="/" class="text-white">
+                            Home
+                        </a>
+                    </li>
+                    <li class="breadcrumb_item mb-0 pb-0 current_page_b text-white fs-4">{{ $program->name }}</li>
+                </ul>
                 <div class="row">
                     <div class="col-lg-8">
                         <div class=" course_detail_s_part">

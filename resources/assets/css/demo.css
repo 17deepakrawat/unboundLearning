@@ -10768,14 +10768,15 @@ input:checked,
 
 .coursedetail_bg {
   width: 100%;
-  height: 247px;
-  background-color: black;
+  height: fit-content;
+  /* background-color: black; */
+  background: #0d3f7c;
 }
 
 .coursedetail_blue_s {
   width: 100%;
   height: 50px;
-  background: #1e47a1;
+  background: #0b2b53;
 }
 
 .coursedetail_b_btn_t {
@@ -10795,8 +10796,8 @@ input:checked,
   padding-right: 12px;
   padding-top: 8px;
   padding-bottom: 8px;
-  background: #555555;
-  border: 1px solid #555555;
+  background: #bc1b00;
+  border: 1px solid #bc1b00;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
@@ -10947,7 +10948,7 @@ input:checked,
 }
 
 .course_grey_bg {
-  background: rgba(96, 152, 219, 0.1);
+  background: rgb(201 109 93 / 14%);
 }
 
 .intro_img {
@@ -11272,7 +11273,7 @@ input:checked,
   .coursedetail_bg {
     width: 100%;
     height: 480px !important;
-    background-color: black;
+    /* background-color: black; */
   }
 
   .course_detail_s_part {
@@ -11802,10 +11803,10 @@ input:checked,
   background: #f4f9ff !important;
 }
 
-/* .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .show > .nav-link, .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .active > .nav-link, .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .nav-link.show, .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .nav-link.active {
+.light-style .layout-navbar .navbar.landing-navbar .navbar-nav .show > .nav-link, .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .active > .nav-link, .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .nav-link.show, .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .nav-link.active {
   color: #1E47A1 !important;
 
-} */
+}
 .sidbar-adjustment {
   padding-left: 13px !important;
   height: 419px;
@@ -13504,7 +13505,7 @@ input:checked,
 }
 
 .university_navpill {
-  background: #f5f5f5;
+  /* background: #f5f5f5; */
   margin-top: 2rem;
   height: 54px;
   padding: 13px 13px 18px 13px;
@@ -13577,7 +13578,7 @@ input:checked,
 }
 
 .online_degree_hr_s {
-  background-color: #1e47a1;
+  background-color: #0d3f7c;
   width: auto;
   height: auto;
   margin-top: 24px;
@@ -13693,7 +13694,7 @@ input:checked,
   color: white;
   font-size: 20px;
   font-family: 'Product Sans';
-  font-weight: 700;
+  font-weight: 500;
   line-height: 66px;
   word-wrap: break-word;
 }
@@ -13710,7 +13711,7 @@ input:checked,
   color: white;
   font-size: 20px;
   font-family: 'Product Sans';
-  font-weight: 700;
+  font-weight: 500;
   line-height: 66px;
   word-wrap: break-word;
   position: relative;
@@ -14165,7 +14166,7 @@ input:checked,
     padding-top: 15px;
   }
   .university_navpill {
-    background: #f5f5f5;
+    /* background: #0d3f7c40; */
     margin-top: 2rem;
     height: 54px !important;
     padding: 15px 0px 0px 0px;
@@ -14173,9 +14174,10 @@ input:checked,
   }
   .univer_silde_tab {
     margin-bottom: 12px;
+    padding: 7px 8px 0px 8px;
   }
   .online_degree_hr_s {
-    background-color: #1e47a1;
+    background-color: #0d3f7c;
     width: 100%;
     height: auto;
     /* max-height: 400px; */
@@ -23739,7 +23741,7 @@ input:checked,
   height: 570px;
   flex-shrink: 0;
   border-radius: 16px;
-  background: #1e47a1;
+  background: #355f91;
   display: flex;
   flex-direction: column;
 }
@@ -32148,7 +32150,7 @@ button.active .helper-row .helper-row-col .helper_nav_title .helper_t_article {
   .course_detail_hero_img {
     width: 240px !important;
     height: 200px !important;
-    top: -36% !important;
+    top: -2% !important;
     position: relative !important;
     right: -444px !important;
   }
@@ -32160,7 +32162,7 @@ button.active .helper-row .helper-row-col .helper_nav_title .helper_t_article {
   .course_detail_hero_img {
     width: 240px !important;
     height: 200px !important;
-    top: 44.1% !important;
+    top: 34.1% !important;
     position: relative !important;
     right: -44px !important;
   }
@@ -34942,7 +34944,7 @@ color: white;
 .mega-dropdown .dropdown-menu {
   width: 81.7% !important;
   left: 243px !important;
-  top: 93px !important;
+  top: 76% !important;
 }
 .side_category_icon4 {
   position: absolute;
@@ -37474,12 +37476,30 @@ border: 1px solid red
 .bottom-card {
   border: solid 1px #13447f;
   border-radius: 8px;
-  box-shadow: 0 1px 3px #13447f4d, 0 1px 2px #13447f4d;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow:
+    0 1px 3px #13447f4d,
+    0 1px 2px #13447f4d;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.bottom-card:hover{
-   box-shadow: 0 14px 28px #13447f4d, 0 10px 10px #13447f4d;
+.bottom-card:hover {
+  box-shadow:
+    0 14px 28px #13447f4d,
+    0 10px 10px #13447f4d;
 }
 /* .univeristy_list_card_m{
   min-width:600px;
 } */
+.main_all_course_s {
+  background-color: #fbe9de;
+  border-color: #bf4e3a;
+}
+.main_all_course_t {
+  color: #7e1300;
+}
+.univer_silde_tab {
+  color: black;
+}
+
+.univer_silde_tab {
+  padding: 7px 8px 0px 8px;
+}

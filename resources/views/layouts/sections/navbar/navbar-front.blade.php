@@ -173,9 +173,11 @@
                                                         aria-controls="course-category-{{ $key }}"
                                                         aria-selected="true">
                                                         @if ($programType['is_skill'])
-                                                            <span class="upcoming_skill"> {{ $programType['name'] }}
-                                                                <img src="{{ asset('assets/img/front-pages/icons/gem.svg') }}"
-                                                                    alt=""> <span><i
+                                                            {{-- <span class="upcoming_skill text-black"> --}}
+                                                                 {{ $programType['name'] }}
+                                                                {{-- <img src="{{ asset('assets/img/front-pages/icons/gem.svg') }}"
+                                                                    alt="">  --}}
+                                                                    <span><i
                                                                         class="ti ti-chevron-right side_category_icon side_category_icon4"></i>
                                                                 @else
                                                                     {{ $programType['name'] }} <span><i
