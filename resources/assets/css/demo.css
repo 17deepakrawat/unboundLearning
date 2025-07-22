@@ -37506,3 +37506,6 @@ border: 1px solid red
 .univer_silde_tab {
   padding: 7px 8px 0px 8px;
 }
+.contact_card{
+  min-height: 150px;
+}

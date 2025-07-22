@@ -63,6 +63,12 @@
             align-items: center;
             margin-bottom: 10px;
         }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #0d3f7c;
+            border-color: #0d3f7c;
+        }
     </style>
 @endsection
 <!-- Page Scripts -->
@@ -190,9 +196,9 @@
     </section>
     <section>
         <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mt-md-3 mt-4">
+                    <div class="card contact_card">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="badge bg-label-success rounded p-2 me-2">
@@ -206,8 +212,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card">
+                <div class="col-lg-4 mt-md-3 mt-4">
+                    <div class="card contact_card">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="badge bg-label-primary rounded p-2 me-2"><i class="ti ti-mail ti-sm"></i></div>
@@ -237,8 +243,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card">
+                <div class="col-lg-3 mt-md-3 mt-4">
+                    <div class="card contact_card">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div class="badge bg-label-success rounded p-2 me-2">
@@ -255,12 +261,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-md-5">
-                    <div class="contact-img-box border p-2 h-100">
-                        <img src="{{ asset('assets/img/front-pages/icons/contact-border.png') }}" alt="contact border"
-                            class="contact-border-img position-absolute d-none d-md-block scaleX-n1-rtl" />
+                <div class="col-lg-6 mt-md-5 mt-4">
+                    <div class=" border rounded" style="height:max-content;">
+                        {{-- <img src="{{ asset('assets/img/front-pages/icons/contact-border.png') }}" alt="contact border"
+                            class="contact-border-img position-absolute d-none d-md-block scaleX-n1-rtl" /> --}}
                         <img src="{{ asset('assets/img/front-pages/landing-page/contact-customer-service.png') }}"
-                            alt="contact customer service" class="contact-img w-100 scaleX-n1-rtl" />
+                            alt="contact customer service" class="contact-img w-100 scaleX-n1-rtl" style="height: 575px" />
                         {{-- <div class="pt-3 px-4 pb-1">
                             <div class="row gy-3 gx-md-4">
                                 <div class="col-md-12">
@@ -305,7 +311,7 @@
                         </div> --}}
                     </div>
                 </div>
-                <div class="col-lg-6 mt-md-5">
+                <div class="col-lg-6 mt-md-5 mt-4">
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h4 class="mb-1">Send a message</h4>
@@ -334,7 +340,7 @@
                                         <label class="form-label" for="contact-form-message ">Message</label>
                                         <textarea class="form-control" name="message" id="contact-form-message" rows="4" required></textarea>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 text-end">
                                         <button type="submit"
                                             class="btn btn-primary waves-effect waves-light">Submit</button>
                                     </div>
@@ -342,6 +348,12 @@
                             </form>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-12 mt-2 mt-md-4 mt-4">
+                    <iframe
+                        src="https://www.google.com/maps?q=Unit+No+-+512+Tower+-+4,+5th+Floor,+Assotech+Business+Cresterra,+Plot+no.+22,+Sector+135,+Expressway+NOIDA,+District+Gautam+Budh+Nagar,+U.P.+201304&output=embed"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
                 </div>
             </div>
         </div>
