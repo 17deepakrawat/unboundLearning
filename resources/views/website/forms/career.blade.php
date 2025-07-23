@@ -813,19 +813,19 @@
                     <div class="col-12">
                         <div class="row gy-4 justify-content-center">
                             <div class="col-6 col-sm-6 col-md-3">
-                                <img src="{{ asset('assets/img/front-pages/icons/wwa-1.jpg') }}"
+                                <img src="{{ asset('assets/img/website/home/1.jpg') }}"
                                     class="img-fluid rounded who-we-image" alt="who-we-are-1">
                             </div>
                             <div class="col-6 col-sm-6 col-md-3">
-                                <img src="{{ asset('assets/img/front-pages/icons/wwa-2.jpg') }}"
+                                <img src="{{ asset('assets/img/website/home/2.jpg') }}"
                                     class="img-fluid rounded who-we-image" alt="who-we-are-2">
                             </div>
                             <div class="col-6 col-sm-6 col-md-3">
-                                <img src="{{ asset('assets/img/front-pages/icons/wwa-3.jpg') }}"
+                                <img src="{{ asset('assets/img/website/home/3.jpg') }}"
                                     class="img-fluid rounded who-we-image" alt="who-we-are-3">
                             </div>
                             <div class="col-6 col-sm-6 col-md-3">
-                                <img src="{{ asset('assets/img/front-pages/icons/wwa-4.jpg') }}"
+                                <img src="{{ asset('assets/img/website/home/4.jpg') }}"
                                     class="img-fluid rounded who-we-image" alt="who-we-are-4">
                             </div>
                         </div>

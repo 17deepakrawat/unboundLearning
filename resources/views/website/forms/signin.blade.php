@@ -67,6 +67,66 @@
         .form-select:focus {
             border-color: #e4ebf3 !important;
         }
+
+        /* @media (max-width: 1590px){
+                .signin_form_bg1 {
+                    background-image: url('/public/assets/img/website/home/portrait-young-teen-student-attending-school.jpg') !important;
+                    width: 100vw !important;
+                    height: 100vh !important;
+                }
+
+                .sign_up_form_align {
+                    padding: 13px 19px !important;
+                    border-radius: 10px !important;
+                }
+
+                .custom_student_lms {
+                    background-color: #ffffff5e !important;
+                }
+
+                .sign_form_sub_t {
+                    color: black !important;
+                }
+
+                .signup_link_t1 {
+                    color: #00123b !important;
+                }
+
+                .tab_col_signin1 {
+                    width: 100% !important;
+                    justify-content: center !important;
+                }
+
+                .mob_text_signin {
+                    color: black !important;
+                    font-weight: 800px !important;
+                    text-align: center !important;
+                }
+
+                .signup_link_t {
+                    text-align: center !important;
+                }
+
+                .form-control,
+                .form-select {
+                    border-radius: 10px !important;
+                    border: solid 1px #2a3134 !important;
+                }
+            } */
+        @media(max-width: 430px) {
+            .custom_signin_field {
+                width: 100% !important
+            }
+
+            .google-button,
+            .arrow,
+            .custom_signin_btn {
+                height: 38px !important;
+            }
+                .sign_up_form_align, .step_form_r {
+                    width: 100% !important
+                }
+        }
     </style>
 @endsection
 
@@ -85,7 +145,7 @@
 
         <div class="row signin_row p-0 m-0">
             <div class="col-lg-6 col-md-6 d-md-block d-lg-block d-xl-block d-md-block d-none mob_sign_col_tab">
-                <img src="{{ asset('assets/img/front-pages/icons/Group 22.png') }}" class="signin_bg_logo" alt="">
+                {{-- <img src="{{ asset('assets/img/front-pages/icons/Group 22.png') }}" class="signin_bg_logo" alt="">
                 <button onclick="javascript:window.location.href='/'" class="btn_back_signin border-none"><img
                         src="{{ asset('assets/img/front-pages/icons/arrow-right_2.svg') }}" alt=""> <span
                         class="btn_back_t">Back to Home</span></button>
@@ -101,7 +161,7 @@
                         <p class="intro_message">Let’s get you all set up so you can verify your personal account and <span
                                 class="intro_message_b"> continue learning.</span></p>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
             <div class="col-lg-6  col-md-6 col-sm-12 tab_col_signin1">
@@ -110,7 +170,7 @@
                         class="btn_back_signin  d-lg-none d-xl-none d-md-none boder-block"><img
                             src="{{ asset('assets/img/front-pages/icons/arrow-right_2.svg') }}" alt=""> <span
                             class="btn_back_t">Back to Home</span></button>
-                    <div class="">
+                    <div class="custom_student_lms">
                         <div class="sign_up_form_align ">
                             <div class="text-center">
                                 <img onclick="javascript:window.location.href='/'" class="cursor-pointer"
@@ -129,7 +189,7 @@
                                     {{ $errors->first() }}
                                 </div>
                             @endif
-                            <form action="{{ route('student.login') }}" method="POST" class=" signinformmob">
+                            <form action="{{ route('student.login') }}" method="POST" class="">
                                 @csrf
                                 <input type="text" class="form-control custom_signin_field mb-3" name="email"
                                     id="email" placeholder="Email Address/Mobile Number">

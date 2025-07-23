@@ -3521,9 +3521,11 @@ nav.layout-navbar.navbar-active::after {
 }
 
 .signin_form_bg1 {
-  background: #264da1;
+  /* background: #264da1; */
+  background-image: url('/public/assets/img/website/home/portrait-young-teen-student-attending-school.jpg');
   height: 100%;
   width: 50%;
+  background-size: cover;
 }
 
 .btn_back_signup {
@@ -4459,7 +4461,7 @@ nav.layout-navbar.navbar-active::after {
   }
 
   .signin_form_bg1 {
-    background: white !important;
+    /* background: white !important; */
   }
 
   .btn_back_signup {
@@ -11803,9 +11805,11 @@ input:checked,
   background: #f4f9ff !important;
 }
 
-.light-style .layout-navbar .navbar.landing-navbar .navbar-nav .show > .nav-link, .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .active > .nav-link, .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .nav-link.show, .light-style .layout-navbar .navbar.landing-navbar .navbar-nav .nav-link.active {
-  color: #1E47A1 !important;
-
+.light-style .layout-navbar .navbar.landing-navbar .navbar-nav .show > .nav-link,
+.light-style .layout-navbar .navbar.landing-navbar .navbar-nav .active > .nav-link,
+.light-style .layout-navbar .navbar.landing-navbar .navbar-nav .nav-link.show,
+.light-style .layout-navbar .navbar.landing-navbar .navbar-nav .nav-link.active {
+  color: #1e47a1 !important;
 }
 .sidbar-adjustment {
   padding-left: 13px !important;
@@ -13764,7 +13768,7 @@ input:checked,
   font-weight: 700;
   line-height: normal;
   padding: 4px 6px;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .universityDetail-details-container {
@@ -27992,7 +27996,7 @@ input:checked,
     display: none !important;
   }
   .signin_row {
-    background-color: white !important;
+    /* background-color: white !important; */
   }
   .tab_col_signin1,
   .signin_row,
@@ -37506,6 +37510,52 @@ border: 1px solid red
 .univer_silde_tab {
   padding: 7px 8px 0px 8px;
 }
-.contact_card{
+.contact_card {
   min-height: 150px;
+}
+@media (max-width: 1590px) and (min-width: 300px) {
+  .signin_form_bg1 {
+    background-image: url('/public/assets/img/website/home/portrait-young-teen-student-attending-school.jpg') !important;
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+  .sign_up_form_align,
+  .step_form_r {
+    width: 100% !important;
+  }
+
+  .custom_student_lms {
+    background-color: #ffffff5e !important;
+    padding: 13px 19px !important;
+    border-radius: 10px !important;
+  }
+
+  .sign_form_sub_t {
+    color: black !important;
+  }
+
+  .signup_link_t1 {
+    color: #00123b !important;
+  }
+
+  .tab_col_signin1 {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .mob_text_signin {
+    color: black !important;
+    font-weight: 800px !important;
+    text-align: center !important;
+  }
+
+  .signup_link_t {
+    text-align: center !important;
+  }
+
+  .form-control,
+  .form-select {
+    border-radius: 10px !important;
+    border: solid 1px #2a3134 !important;
+  }
 }
